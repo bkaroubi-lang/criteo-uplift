@@ -1,0 +1,24 @@
+# --- Data: DO NOT COMMIT (297MB, exceeds GitHub's 100MB limit; CC-BY-NC-SA) ---
+criteo-research-uplift-v2.1.csv.gz
+data/processed/
+*.parquet
+
+# Regenerable per-user CATE matrices (large, rebuilt by run_comparison)
+results/tables/cate_eval_*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Renderer intermediates (keep uplift_article.html + the .pdf deliverables)
+article/carousel.html
+article/uplift_preview.html
+# Claude-artifact fragment (no <!doctype>), regenerable:
+article/uplift_artifact.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
