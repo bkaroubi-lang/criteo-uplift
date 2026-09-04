@@ -100,6 +100,15 @@ it yourself and drop it in the repo root as `criteo-research-uplift-v2.1.csv.gz`
 
 ## Environment
 
+**Recommended — [uv](https://docs.astral.sh/uv/)** (fetches Python 3.11 itself, no conda needed):
+
+```bash
+uv sync
+uv run python -m src.prepare_data
+```
+
+**Alternative — conda:**
+
 ```bash
 conda env create -f environment.yml   # creates the `criteo` env (Python 3.11)
 conda activate criteo

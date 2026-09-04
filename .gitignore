@@ -22,3 +22,6 @@ article/uplift_artifact.html
 Thumbs.db
 .vscode/
 .idea/
+
+# uv / virtualenv
+.venv/
